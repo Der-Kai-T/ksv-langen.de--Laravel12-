@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/kalender', function () {
+    return view('kalender');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
