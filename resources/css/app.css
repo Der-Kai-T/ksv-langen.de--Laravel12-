@@ -1,7 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+@import "tailwindcss";
+@source "../views";
 [x-cloak] {
     display: none;
+}
+
+
+:root{
+    --color-primary:#117f46;
+    --color-darker: #0a4c29;
+    --color-lighter: #16a55b;
+    --color-lightest: #d9eef6;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #de1418;
+    --color-redDark: #800202;
+    --color-background: #111827
+}
+
+
+
+td ul{
+    list-style: circle;
+}
+
+
+
+:required, .required {
+    border-color: var(--color-red) !important;
+    border-width: 1px;
+}
+
+input:valid, textarea:valid, select:valid,  .valid{
+    border-color: var(--color-darker) !important;
+    border-width: 1px;
+}
+
+.form-label-annotation{
+    font-size: 8pt;
 }

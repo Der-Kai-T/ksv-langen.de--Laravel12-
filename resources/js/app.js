@@ -1,7 +1,6 @@
 import './bootstrap';
-import 'boxicons';
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
+import * as bootstrap from 'bootstrap'
+import '../../vendor/masmerise/livewire-toaster/resources/js';
 
+console.log(bootstrap.Tooltip.VERSION);
+window.bootstrap = bootstrap;

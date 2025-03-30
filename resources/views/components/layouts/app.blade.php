@@ -1,5 +1,5 @@
 @extends("layouts.backend")
 
 @section("content")
-    <livewire:test.toast />
+    {{ $slot }}
 @endsection

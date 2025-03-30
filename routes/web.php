@@ -18,4 +18,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/admin/sponsors', \App\Livewire\App\Sponsors\Index::class)->name('admin.sponsors');
 });
